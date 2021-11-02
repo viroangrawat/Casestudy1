@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<title>Case Study #1</title>
 <style>
   .uppercase {
     text-transform: uppercase;
@@ -11,43 +10,27 @@
     text-transform: capitalize;
   }
 </style>
+<p style="font-weight: bold;", class="uppercase">Case Study1: - </p>
 <a href="https://github.com/viroangrawat/Stout---Digital-Data-Analytics-Internship">GitHub Repository</a>
-<p style="font-weight: bold;", class="uppercase">Year 2015</p>
-<p class="capitalize">Total revenue for the current year = 29036749.189 </p>
-<p class="capitalize">New Customer Revenue = N/A(because no prior year information available)</p>
-<p class="capitalize">Existing Customer Growth. = N/A(because no prior year information available)</p>
-<p class="capitalize">Revenue lost from attrition = N/A(because no prior year information available)</p>
-<p class="capitalize">Existing Customer Revenue Current Year = 29036749.189</p>
-<p class="capitalize">Total Customers Current Year = 231294</p>
-<p class="capitalize">Total Customers Previous Year = N/A(because no prior year information available)</p>
-<p class="capitalize">New Customers = 231294</p>
-<p class="capitalize">Lost Customers = N/A(because no prior year information available)</p>
+<p style="font-weight: bold;", class="uppercase">Description of Dataset and Issues with it:</p>
+<p class="lowercase"> The given data set represents thousands of loans made through the Lending Club platform. Lending Club platform is a platform that allows individuals to lend to other individuals. Someone who is a essentially a sure bet to pay back a loan will have an easier time getting a loan with a low interest rate than someone who appears to be riskier. </p>
+<p style="font-weight: bold;", class="uppercase">Data cleansing steps:</p>
+<p class="lowercase">For data cleansing firstly, I replaced NA values of "emp_length", "balance" columns with the mean values of the whole column. Then columns "annual_income_joint", "debt_to_income_joint" having NA values is replaced with 0. After that some insignificant columns were dropped-off for accurate predictions.</p>
+<p style="font-weight: bold;", class="uppercase">Plots: -(Plots may appear blurr, but they are clearly visible in jupyter notebook)</p>
+<p class="lowercase">The plot shown below tells about the correlation between all the variables. Since we are interested in predicting the interest rate therefore we will focus on relation corresponding to interest rate. It can be inferred that interest rate is most related to paid _interest and least related with annual_income.</p>
+<img src="corrplot.png"  width="1000" height="1000">
 <br />
-<p style="font-weight: bold;", class="uppercase">Year 2016</p>
-<p class="capitalize">Total revenue for the current year = 25730943.59 </p>
-<p class="capitalize">New Customer Revenue = 18245491.01</p>
-<p class="capitalize">Existing Customer Growth. = -20335.45</p>
-<p class="capitalize">Revenue lost from attrition = 0.079</p>
-<p class="capitalize">Existing Customer Revenue Current Year = 7485452.58</p>
-<p class="capitalize">Existing Customer Revenue Prior Year = 7465117.12</p>
-<p class="capitalize">Total Customers Current Year = 204646</p>
-<p class="capitalize">Total Customers Previous Year =231294</p>
-<p class="capitalize">New Customers = 145062</p>
-<p class="capitalize">Lost Customers = 26648</p>
+<p class="lowercase">The plot below shows a graph with a relation between interest rate and paid_interest. It can be inferred that as the interest rate increases, paid_interest also increases, which is quite obvious</p>
+<img src="plot2.png"  width="1000" height="1000"><br />
+<p class="lowercase">The both plot below shows all the information about the variables</p>
+<img src="plot3.png"  width="1000" height="1000"><br />
+
+<img src="plot4.png"  width="1000" height="1000"><br />
+<p class="lowercase">The plot below shows box plot for all the variables and tells the range, median for the values of the variables.</p>
+<img src="plot5.png"  width="1000" height="1000"><br />
+
+<p style="font-weight: bold;", class="uppercase">Visualizing the test results:</p>
+<p class="lowercase">The last plot show the actual values vs the predicted values using linear regression.</p>
+<img src="actualvsprediction.png"  width="1000" height="1000">
 <br />
-<p style="font-weight: bold;", class="uppercase">Year 2017</p>
-<p class="capitalize">Total revenue for the current year = 31417495.030000016 </p>
-<p class="capitalize">New Customer Revenue = 28776235.039</p>
-<p class="capitalize">Existing Customer Growth. = 20611.34</p>
-<p class="capitalize">Revenue lost from attrition = 0.065</p>
-<p class="capitalize">Existing Customer Revenue Current Year = 2641259.99</p>
-<p class="capitalize">Existing Customer Revenue Prior Year = 2620648.65</p>
-<p class="capitalize">Total Customers Current Year = 204646</p>
-<p class="capitalize">Total Customers Previous Year = 249987</p>
-<p class="capitalize">New Customers = 229028</p>
-<p class="capitalize">Lost Customers = 45341</p>
-<br />
-<p style="font-weight: bold;", class="uppercase">Plots</p>
-<img src="customers_everyyear.png"  width="500" height="350">
-<br />
-<img src="net_revenuebyyear.png"  width="500" height="350">
+
